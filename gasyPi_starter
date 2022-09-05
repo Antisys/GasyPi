@@ -1,0 +1,20 @@
+#!/bin/bash
+./W1_Temperature.py -i 28-000004abfb55 -n W1_Temp_Boiler_exit&
+./W1_Temperature.py -i 28-000005e5ccc8 -n W1_Temp_Boiler_entry&
+./W1_Temperature.py -i 28-000005f403dc -n W1_Temp_Heater_feed&
+./W1_Temperature.py -i 28-000005f1ff79 -n W1_Temp_Tank_Zone1&
+./W1_Temperature.py -i 28-000005f2fe6f -n W1_Temp_Tank_Zone2&
+./W1_Temperature.py -i 28-000005f2f56c -n W1_Temp_Tank_Zone3&
+./W1_Temperature.py -i 28-000005f3d4e2 -n W1_Temp_Tank_Zone4&
+./W1_Temperature.py -i 28-000005f375bc -n W1_Temp_Tank_Zone5&
+./W1_Temperature.py -i 28-000005f318a9 -n W1_Temp_Tank_Zone6&
+./W1_Temperature.py -i 28-051686d678ff -n W1_Temp_Tank_Zone7&
+./W1_Temperature.py -i 28-051686d3b7ff -n W1_Temp_Tank_Zone8&
+./W1_Temperature.py -i 28-0416864c2bff -n W1_Temp_Tank_Zone9&
+./W1_Temperature.py -i 28-0416861978ff -n W1_Temp_Tank_Zone10&
+./W1_Temperature.py -i 28-051686d9fbff -n W1_Temp_Tank_Zone11&
+./W1_Temperature.py -i 28-051686d745ff -n W1_Temp_Tank_Zone12&
+./W1_Temperature.py -i 28-000004bff14b -n W1_Temp_Outside&
+./gasyPi_proxy.py &
+python zql_rec.py
+ 
